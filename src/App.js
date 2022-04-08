@@ -4,6 +4,7 @@ import { Canvas, useFrame, useThree, useResource } from '@react-three/fiber'
 import { Points, PointMaterial } from '@react-three/drei'
 import * as random from 'maath/random/dist/maath-random.esm'
 import Planet from './Planet'
+import Core from './Core'
 
 export default function App() {
   return (
@@ -26,6 +27,8 @@ function Stars(props) {
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
       <Points ref={ref} positions={sphere} stride={3} frustumCulled={false} {...props}>
+      <Core scale={[0.05, 0.05, 0.05]} />
+
         <Planet position={[0, 0.4, 0]} scale={[0.5, 0.5, 0.5]} color={'#fd00e8'} />
         <Planet position={[0, -0.4, 0]} scale={[0.5, 0.5, 0.5]} color="#fd00e8" />
         <Planet position={[0.8, 0.4, 0]} scale={[0.5, 0.5, 0.5]} color="#fd00e8" />
