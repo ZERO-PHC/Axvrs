@@ -25,7 +25,7 @@ function Overlay() {
           <button class="button">CONNECT WALLET</button>
         </section>
 
-        <div style={{ position: 'absolute', bottom: 14, right: 36, fontSize: '13px' }}>MADE BY THE</div>
+        <div style={{ position: 'absolute', bottom: 10, right: 36, fontSize: '13px' }}>MADE BY THE</div>
         <div
           style={{
             transform: 'rotate(-90deg)',
@@ -41,11 +41,15 @@ function Overlay() {
           PIXEL HACKERS CREW
         </div>
       </div>
-      <div style={{ position: 'absolute', bottom: 14, left: 30, fontSize: '13px' }}>
+      <div style={{ position: 'absolute', bottom: 10, left: 30, fontSize: '13px' }}>
         <img src={'https://res.cloudinary.com/do4mactw0/image/upload/v1649354231/icons_kk2hzt.svg'} alt="icons" />
       </div>
-      <section style={{ position: 'absolute', bottom: 0, left: '50%', transform: 'translate(-50%, 0)', fontSize: '13px' }}>
+      <section
+        style={{ height: '1.6rem', position: 'absolute', bottom: 30, left: '50%', transform: 'translate(-50%, 0)', fontSize: '13px' }}>
         <Rive src="scroll.riv" />
+      </section>
+      <section style={{ position: 'absolute', bottom: 10, left: '50%', transform: 'translate(-50%, 0)', fontSize: '13px' }}>
+        <span style={{ color: '#fd00e8' }}>SCROLL</span>
       </section>
     </>
   )
